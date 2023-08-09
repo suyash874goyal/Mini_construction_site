@@ -1,0 +1,212 @@
+/* THIS IS A STYLE SHEET OF HOME PAGE  HOME PAGE   */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbox {
+    background-color: rgb(49, 48, 48);
+    height: 100px;
+    border: solid 3px black;
+    width: 100%;
+}
+
+.bothpd {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.pages {
+    display: flex;
+    padding-right: 220px;
+}
+
+.search {
+    display: flex;
+}
+
+#home {
+    background-color: black;
+    color: bisque;
+    height: 45px;
+    width: 130px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition-duration: 0.5s;
+}
+
+#home:enabled {
+    background-color: blanchedalmond;
+    color: rgb(19, 17, 17);
+    cursor: pointer;
+}
+
+#service {
+    background-color: black;
+    color: bisque;
+    height: 45px;
+    width: 130px;
+    border-radius: 10px;
+    margin-left: 55px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition-duration: 0.5s;
+}
+
+#service:hover {
+    background-color: blanchedalmond;
+    color: rgb(19, 17, 17);
+    cursor: pointer;
+}
+
+#project {
+    background-color: black;
+    color: bisque;
+    height: 45px;
+    width: 130px;
+    border-radius: 10px;
+    margin-left: 55px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition-duration: 0.5s;
+}
+
+#project:hover {
+    background-color: blanchedalmond;
+    color: rgb(19, 17, 17);
+    cursor: pointer;
+}
+
+#contact {
+    background-color: black;
+    color: bisque;
+    height: 45px;
+    width: 130px;
+    border-radius: 10px;
+    margin-left: 55px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition-duration: 0.5s;
+}
+
+#contact:hover {
+    background-color: blanchedalmond;
+    color: rgb(19, 17, 17);
+    cursor: pointer;
+}
+
+#searchbox {
+    height: 35px;
+    width: 250px;
+    border: solid 2px grey;
+    border-radius: 5px;
+}
+
+#searchbutton {
+    height: 36px;
+    width: 90px;
+    font-size: 19px;
+    border: solid 2px rgb(122, 122, 122);
+    color: black;
+    border-radius: 10px;
+    background-color: rgba(205, 218, 205, 0.781);
+    margin-left: 5px;
+}
+
+#searchbutton:hover {
+    cursor: pointer;
+    background-color: rgb(39, 43, 39);
+    color: antiquewhite;
+}
+
+.imagea {
+    background-image: url("pexels-rodolfo-quirós-2219024.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+}
+
+.imagetext {
+    color: rgb(230, 230, 230);
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    padding-top: 30px;
+}
+
+.imageb {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+#wherewe {
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+.texting {
+    padding-top: 110px;
+}
+
+#builderimage {
+    border-radius: 20px;
+    border: solid 7px black;
+}
+
+#special {
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+#specialization {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.spice {
+    font-size: 45px;
+}
+
+.fulltext {
+    margin-top: 100px;
+}
+
+.consultant {
+    background-image: url("pexels-ketut-subiyanto-4963437.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 3px black;
+    margin-top: 100px;
+}
+
+#thistext {
+    text-align: center;
+    font-size: 60px;
+    color: blanchedalmond;
+    padding-top: 200px;
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: black;
+    height: 90px;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 2px;
+}

@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbox {
+    background-color: rgb(49, 48, 48);
+    height: 100px;
+    border: solid 3px black;
+    width: 100%;
+}
+
+.bothpd {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.pages {
+    display: flex;
+    padding-right: 220px;
+}
+
+.search {
+    display: flex;
+}
+
+#home {
+    background-color: black;
+    color: bisque;
+    height: 45px;
+    width: 130px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition-duration: 0.5s;
+}
+
+#home:hover {
+    background-color: blanchedalmond;
+    color: rgb(19, 17, 17);
+    cursor: pointer;
+}
+
+#service {
+    background-color: black;
+    color: bisque;
+    height: 45px;
+    width: 130px;
+    border-radius: 10px;
+    margin-left: 55px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition-duration: 0.5s;
+}
+
+#service:hover {
+    background-color: blanchedalmond;
+    color: rgb(19, 17, 17);
+    cursor: pointer;
+}
+
+#project {
+    background-color: black;
+    color: bisque;
+    height: 45px;
+    width: 130px;
+    border-radius: 10px;
+    margin-left: 55px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition-duration: 0.5s;
+}
+
+#project:enabled {
+    background-color: blanchedalmond;
+    color: rgb(19, 17, 17);
+    cursor: pointer;
+}
+
+#contact {
+    background-color: black;
+    color: bisque;
+    height: 45px;
+    width: 130px;
+    border-radius: 10px;
+    margin-left: 55px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition-duration: 0.5s;
+}
+
+#contact:hover {
+    background-color: blanchedalmond;
+    color: rgb(19, 17, 17);
+    cursor: pointer;
+}
+
+#searchbox {
+    height: 35px;
+    width: 250px;
+    border: solid 2px grey;
+    border-radius: 5px;
+}
+
+#searchbutton {
+    height: 36px;
+    width: 90px;
+    font-size: 19px;
+    border: solid 2px rgb(122, 122, 122);
+    color: black;
+    border-radius: 10px;
+    background-color: rgba(205, 218, 205, 0.781);
+    margin-left: 5px;
+}
+
+#searchbutton:hover {
+    cursor: pointer;
+    background-color: rgb(39, 43, 39);
+    color: antiquewhite;
+}
+
+.imagee {
+    background-image: url("pexels-expect-best-323775.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+.projectee {
+    text-align: center;
+    font-size: 70px;
+    text-decoration: underline;
+    color: bisque;
+    padding-top: 130px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.projecta {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectprop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.projecttext {
+    font-size: 40px;
+}
+
+.projectb {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projecttextb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.textproject {
+    font-size: 40px;
+}
+
+.projectc {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projecttextsc {
+    display: flex;
+    flex-direction: column;
+}
+
+.textprojectc {
+    font-size: 45px;
+}
+
+.projectd {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projecttextd {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.projectsd {
+    font-size: 45px;
+}
+
+.footer {
+    background-color: black;
+    height: 90px;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 2px;
+}
+
+.fullform {
+    margin-left: 160px;
+}
+
+.transitionimg {
+    background-image: url("SMV2\ EDIT.bmp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 800px;
+    width: 1330px;
+    animation-name: transition;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+
+.fulltransitionimg {
+    margin-left: 460px;
+}
+
+@keyframes transition {
+    10% {
+        background-image: url("pexels-andrea-piacquadio-3760529.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 800px;
+        width: 1330px;
+    }
+    20% {
+        background-image: url("rdj\ 2\ lhs\ p.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 800px;
+        width: 1330px;
+    }
+    40% {
+        background-image: url("rtyyd~2.bmp");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 800px;
+        width: 1330px;
+    }
+    60% {
+        background-image: url("SMV2\ EDIT.bmp");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 800px;
+        width: 1330px;
+    }
+    80% {
+        background-image: url("2p5.bmp");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 800px;
+        width: 1330px;
+    }
+    100% {
+        background-image: url("pexels-tima-miroshnichenko-6615199.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 800px;
+        width: 1330px;
+    }
+}

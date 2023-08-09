@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbox {
+            background-color: rgb(49, 48, 48);
+            height: 100px;
+            border: solid 3px black;
+            width: 100%;
+        }
+        
+        .bothpd {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 30px;
+        }
+        
+        .pages {
+            display: flex;
+            padding-right: 220px;
+        }
+        
+        .search {
+            display: flex;
+        }
+        
+        #home {
+            background-color: black;
+            color: bisque;
+            height: 45px;
+            width: 130px;
+            border-radius: 10px;
+            font-size: 17px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition-duration: 0.5s;
+        }
+        
+        #home:hover {
+            background-color: blanchedalmond;
+            color: rgb(19, 17, 17);
+            cursor: pointer;
+        }
+        
+        #service {
+            background-color: black;
+            color: bisque;
+            height: 45px;
+            width: 130px;
+            border-radius: 10px;
+            margin-left: 55px;
+            font-size: 17px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition-duration: 0.5s;
+        }
+        
+        #service:hover {
+            background-color: blanchedalmond;
+            color: rgb(19, 17, 17);
+            cursor: pointer;
+        }
+        
+        #project {
+            background-color: black;
+            color: bisque;
+            height: 45px;
+            width: 130px;
+            border-radius: 10px;
+            margin-left: 55px;
+            font-size: 17px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition-duration: 0.5s;
+        }
+        
+        #project:hover {
+            background-color: blanchedalmond;
+            color: rgb(19, 17, 17);
+            cursor: pointer;
+        }
+        
+        #contact {
+            background-color: black;
+            color: bisque;
+            height: 45px;
+            width: 130px;
+            border-radius: 10px;
+            margin-left: 55px;
+            font-size: 17px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition-duration: 1s;
+        }
+        /* blanchedalmond;*/
+        
+        #contact:enabled {
+            background-color: blanchedalmond;
+            color: black;
+            cursor: pointer;
+        }
+        
+        #searchbox {
+            height: 35px;
+            width: 250px;
+            border: solid 2px grey;
+            border-radius: 5px;
+        }
+        
+        #searchbutton {
+            height: 36px;
+            width: 90px;
+            font-size: 19px;
+            border: solid 2px rgb(122, 122, 122);
+            color: black;
+            border-radius: 10px;
+            background-color: rgba(205, 218, 205, 0.781);
+            margin-left: 5px;
+        }
+        
+        #searchbutton:hover {
+            cursor: pointer;
+            background-color: rgb(39, 43, 39);
+            color: antiquewhite;
+        }
+        
+        .intro {
+            background-color: rgb(88, 82, 79);
+            height: 55px;
+            width: 1350px;
+            border: solid 4px black;
+            display: flex;
+            font-size: 18px;
+            color: aliceblue;
+        }
+        
+        #one {
+            background-color: burlywood;
+            height: 200px;
+            width: 1350px;
+            border: solid 2px black;
+            margin-top: 190px;
+        }
+        
+        #form1 {
+            background-color: rgb(46, 45, 45);
+            width: 800px;
+            height: 500px;
+            border: solid 20px rgba(233, 196, 196, 0.521);
+            border-radius: 10px;
+        }
+        
+        #signup {
+            background-color: blanchedalmond;
+            color: black;
+            font-size: 20px;
+            height: 45px;
+            width: 320px;
+            border-radius: 10px;
+        }
+        
+        #signup:hover {
+            background-color: rgb(63, 58, 58);
+        }
+        
+        #login {
+            background-color: rgb(46, 45, 45);
+            height: 45px;
+            font-size: 20px;
+            width: 320px;
+            border-radius: 10px;
+        }
+        
+        #login:hover {
+            background-color: blanchedalmond;
+        }
+        
+        #started {
+            height: 50px;
+            width: 300px;
+            background-color: blanchedalmond;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        
+        #started:hover {
+            background-color: grey;
+        }
+        
+        #enter {
+            height: 45px;
+            width: 300px;
+            background-color: rgb(46, 45, 45);
+        }
+        
+        #enter2 {
+            height: 45px;
+            width: 300px;
+            background-color: rgb(46, 45, 45);
+        }
+        
+        #email {
+            height: 45px;
+            width: 615px;
+            background-color: rgb(46, 45, 45);
+        }
+        
+        #password {
+            height: 45px;
+            width: 615px;
+            background-color: rgb(46, 45, 45);
+        }
+        
+        .footer {
+            background-color: black;
+            height: 90px;
+            width: 100%;
+            color: whitesmoke;
+            font-size: 25px;
+            margin-top: 40px;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2px;
+        }
+        
+        .fullform {
+            margin-left: 160px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <nav>
+        <div class="navbox">
+            <div class="bothpd">
+
+                <div class="pages">
+                    <a href="construction.html"><button id="home">HOME</button></a>
+                    <a href="service.html"><button id="service">SERVICES</button></a>
+                    <a href="project.html"><button id="project">PROJECTS</button></a>
+                    <a href="contact.html" target="_blank"><button id="contact">CONTACT</button></a>
+                </div>
+
+                <div class="search">
+                    <input type="search" name="" height="20px" id="searchbox" placeholder="TYPE HERE TO SEARCH">
+                    <button id="searchbutton">Search</button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+
+
+    <div class="fullform">
+        <div style="margin-left: 250px;">
+            <form id="form1">
+                <center>
+                    <div style="margin-top: 40px;">
+                        <input type="button" value="SIGN UP" id="signup">
+                        <input type="button" value="LOG IN" id="login">
+                    </div>
+                </center>
+
+                <center>
+                    <h1 style="color: white;">Consulting is Free</h1>
+                </center>
+
+                <center>
+                    <div class="enter">
+                        <input placeholder="Enter your Name*" type="text" id="enter">
+                        <input placeholder="Enter your Last Name*" type="text" id="enter2">
+                    </div>
+                </center><br>
+                <br>
+
+                <center>
+                    <div>
+                        <input type="email" name="" placeholder="Email Address*" id="email"><br>
+                        <br>
+                        <input type="number" id="password" placeholder="Enter phone number*">
+                    </div>
+                </center><br>
+                <br>
+
+                <center> <input type="button" value="SUBMIT" id="started" class="started2"></center>
+
+
+            </form>
+        </div>
+    </div>
+    <br>
+
+
+
+    <footer class="footer">
+        <div class="copyright">
+            <h2> &copy;opyright Construction Site</h2>
+        </div>
+    </footer>
+
+</body>
+
+</html>
